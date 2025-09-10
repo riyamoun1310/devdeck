@@ -19,6 +19,7 @@ interface SkillCardProps {
   onNewMilestoneChange: (value: string) => void;
   onAddMilestone: (skillId: number) => void;
   onSetActiveSkillId: (id: number | null) => void;
+  onSetEditSkillId: (id: number | null) => void;
   onSetEditMilestoneId: (id: { skillId: number; milestoneId: number } | null) => void;
   onEditSkillValueChange: (value: string) => void;
   onEditMilestoneValueChange: (value: string) => void;

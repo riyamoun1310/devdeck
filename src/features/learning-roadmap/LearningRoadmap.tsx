@@ -1,5 +1,4 @@
-// Removed duplicate handler outside component
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './LearningRoadmap.css';
 import RoadmapTooltip from '../../components/RoadmapTooltip';
 import { SkillCard } from './SkillCard';
@@ -143,6 +142,8 @@ export function LearningRoadmap({ darkMode }: { darkMode: boolean }) {
             onSetActiveSkillId={setActiveSkillId}
             onEditSkillValueChange={setEditSkillValue}
             onEditMilestoneValueChange={setEditMilestoneValue}
+            onSetEditSkillId={setEditSkillId}
+            onSetEditMilestoneId={setEditMilestoneId}
           />
         ))}
       </div>

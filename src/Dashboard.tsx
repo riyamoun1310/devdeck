@@ -1,5 +1,5 @@
 // Main dashboard layout for DevDeck
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Dashboard.css';
 import { KanbanBoard } from './features/kanban-board/KanbanBoard';
 import { LearningRoadmap } from './features/learning-roadmap/LearningRoadmap';
