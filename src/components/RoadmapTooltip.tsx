@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function RoadmapTooltip({ show }: { show: boolean }) {
   if (!show) return null;
   return (

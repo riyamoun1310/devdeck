@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Toast({ message, show }: { message: string; show: boolean }) {
   if (!show) return null;
   return (

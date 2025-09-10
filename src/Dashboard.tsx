@@ -28,7 +28,7 @@ export default function Dashboard({ currentTheme, toggleTheme }: DashboardProps)
         </button>
       </header>
       <main className={`tab-content${active ? ' fade-in' : ''}`} key={active}>
-        {active === 'kanban' && <KanbanBoard darkMode={currentTheme === 'dark'} />}
+        {active === 'kanban' && <KanbanBoard darkMode={currentTheme === 'dark'} setDarkMode={() => {}} />}
         {active === 'roadmap' && <LearningRoadmap darkMode={currentTheme === 'dark'} />}
         {active === 'pipeline' && <JobPipeline darkMode={currentTheme === 'dark'} />}
         {!active && (
