@@ -1,0 +1,134 @@
+.tab-content {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
+  min-height: 80vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.tab-content.fade-in {
+  opacity: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: 80vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.dashboard-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--background);
+  color: var(--text);
+}
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: none;
+}
+.dashboard-header p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-shadow: none;
+}
+.dashboard-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.dashboard-tabs {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.dashboard-tab {
+  background: var(--tab-bg);
+  color: var(--tab-text);
+  border-radius: 16px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1.2rem 2.5rem;
+  box-shadow: 0 2px 16px #222;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.dashboard-tab.active {
+  box-shadow: 0 0 16px 4px var(--primary-glow);
+  border: 2px solid var(--primary-glow);
+}
+.dashboard-nav button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dashboard-nav button.active {
+  border-color: var(--primary-glow);
+  box-shadow: 0 0 15px var(--primary-glow);
+  color: var(--text-color);
+  background-color: var(--header-bg);
+}
+.dashboard-nav button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.dashboard-mode-toggle {
+  margin-top: 1.5rem;
+  background: var(--tab-bg);
+  color: var(--tab-text);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 8px #222;
+  width: auto;
+  max-width: 300px;
+}
+.dashboard-content {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0;
+  background: transparent;
+}
+:root {
+  --background: #181818;
+  --text: #fff;
+  --tab-bg: #111;
+  --tab-text: #fff;
+  --primary-glow: #4caf50;
+  --button-bg: #222;
+  --button-text: #fff;
+}
+.light-mode {
+  --background: #f7f7f7;
+  --text: #222;
+  --tab-bg: #fff;
+  --tab-text: #222;
+  --primary-glow: #1976d2;
+}

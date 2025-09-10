@@ -1,0 +1,33 @@
+.kanban-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.kanban-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 0 2px 16px #111;
+}
+.kanban-mode-btn {
+  padding: 0.8rem 2rem;
+  background: #181818;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #222;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.kanban-mode-btn:hover {
+  background: #4caf50;
+  color: #181818;
+  border-color: #4caf50;
+}
